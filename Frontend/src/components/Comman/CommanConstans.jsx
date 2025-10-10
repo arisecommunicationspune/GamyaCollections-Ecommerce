@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // API Configuration
- export const BASEURL = "http://api.gamyacollections.com";
+ export const BASEURL = "https://api.gamyacollections.com";
 // export const BASEURL = "http://localhost:5000";
 
 

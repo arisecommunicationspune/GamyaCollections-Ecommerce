@@ -119,6 +119,30 @@ const ApiService = {
     }
   },
 
+
+ getHeaders() {
+    const token = localStorage.getItem('token');
+    return {
+      Authorization: token ? `Bearer ${token}` : '',
+      'Content-Type': 'application/json',
+    };
+  },
+
+  async deleteCategory(id) {
+    try {
+      const response = await axios.delete(`${BASEURL}/api/category/${id}`, {
+        headers: this.getHeaders(),
+      });
+      return response;
+    } catch (error) {
+      console.error('Error deleting category:', error);
+      throw error;
+    }
+  },
+
+
+
+
   // ==================== SUBCATEGORY APIs ====================
   async getSubcategories(page = 1, limit = 10) {
     try {

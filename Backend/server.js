@@ -22,7 +22,7 @@ const allowedOrigins = [
  "http://72.60.200.66:5000",
   "https://gamyacollections.com",
   "http://gamyacollections.com",
-   "http://api.gamyacollections.com",
+   "https://api.gamyacollections.com",
 ];
 const corsOptions = {
   origin: (origin, callback) => {

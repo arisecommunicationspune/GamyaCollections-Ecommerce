@@ -24,11 +24,11 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <div className="container- m-auto py-14 flex flex-col justify-center items-center h-auto px-9 md:px-8 lg:px-16 overflow-hidden gap-4">
+    <div className="container-fluid m-auto py-14 flex flex-col justify-center items-center h-auto px-9 md:px-8 lg:px-16 overflow-hidden gap-4">
       <h2 className="text-4xl font-serif text-amber-900 mb-3">Testimonial</h2>
       {loading && <div className="text-lg text-gray-600">Loading...</div>}
       {error && <div className="text-red-600 mb-2">{error}</div>}
-      <div className="flex flex-col md:flex-row gap-4 max-w-7xl">
+      <div className="flex flex-col md:flex-row gap-4 ">
         {videos.length === 0 && !loading && (
           <div className="text-gray-500">No testimonial videos found.</div>
         )}

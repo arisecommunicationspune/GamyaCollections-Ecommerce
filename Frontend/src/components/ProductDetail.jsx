@@ -10,6 +10,7 @@ import {
   FaTelegram,
   FaHeart,
   FaQuestion,
+  FaInstagram,
 } from "react-icons/fa";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -368,10 +369,23 @@ export default function ProductDetail() {
                   : "Uncategorized")}
             </p>
             <div className="flex gap-3 mt-2 text-amber-700">
-              <FaFacebook />
-              <FaTwitter />
-              <FaLinkedin />
-              <FaTelegram />
+            
+              <a
+      href="https://www.instagram.com/gamya_collections/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className=" hover:text-[#A63C15] transition duration-300"
+    >
+     <FaInstagram />
+    </a>
+    <a
+      href="https://www.facebook.com/people/GamyaCollections/61566820012535"
+      target="_blank"
+      rel="noopener noreferrer"
+      className=" hover:text-[#A63C15] transition duration-300"
+    >
+       <FaFacebook />
+    </a>
             </div>
           </div>
         </div>

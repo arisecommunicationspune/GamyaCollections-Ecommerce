@@ -16,6 +16,7 @@ import CategoryPage from "./Pages/CategoryPage";
 import About from "./Pages/About";
 import Bangels from "./Pages/Bangels";
 import Anklets from "./Pages/Anklets";
+import Necklaces from "./Pages/Necklaces";
 import { FaArrowUp } from "react-icons/fa";
 import ClickSpark from "./components/ClickSpark/ClickSpark";
 import PolicyPage from "./Pages/Policy";
@@ -91,6 +92,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/category/:id" element={<CategoryPage />} />
+           <Route path="/necklaces" element={<Necklaces />} />
+
             <Route path="/anklets" element={<Anklets />} />
             <Route path="/bangels" element={<Bangels />} />
             <Route path="/about" element={<About />} />
